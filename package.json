@@ -1,0 +1,17 @@
+{
+  "name": "tetris",
+  "version": "0.1.0",
+  "description": "Tetris Game using Web Assembly compiled with Rust.",
+  "main": "index.js",
+  "author": "Kurnia Wanto <wanto47@gmail.com>",
+  "dependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "prebuild": "rm ./dist/*.wasm && wasm-pack build --no-typescript --target web",
+    "build": "webpack",
+    "postbuild": "serve -s dist",
+    "updatejs": "webpack && serve -s dist"
+  }
+}

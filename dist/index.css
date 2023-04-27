@@ -1,0 +1,112 @@
+:root {
+  --putih: #ffffff;
+  --abu: #666666;
+  --kuning: #ff9900;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  position: relative;
+  height: 100%;
+  background-color: var(--putih);
+}
+
+.navbar {
+  background-color: var(--putih);
+}
+
+.permen {
+  cursor: pointer;
+  font-size: 1.3em;
+  position: relative;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .permen {
+    font-size: 1.5em;
+  }
+}
+
+.permen:hover {
+  transform: scale(1.2);
+  border-color: white !important;
+}
+
+.glow {
+  color: rgba(255, 255, 255, 1);
+  border-color: white;
+  box-shadow: 0 5px 15px rgba(142, 2, 241, 0.637) !important;
+  /* background-color: rgba(141, 2, 241, 0.514) !important; */
+  transform: scale(1.2);
+}
+
+.petunjuk {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px rgba(240, 22, 22, 0.863);
+  border: 1px solid white;
+}
+
+.wiggle {
+  animation-name: wiggle;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform: rotate(10deg);}
+  25% {-webkit-transform: rotate(-10deg);}
+  50% {-webkit-transform: rotate(20deg);}
+  75% {-webkit-transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
+  0% {-ms-transform: rotate(1deg);}
+  25% {-ms-transform: rotate(-1deg);}
+  50% {-ms-transform: rotate(1.5deg);}
+  75% {-ms-transform: rotate(-5deg);}
+  100% {-ms-transform: rotate(0deg);}
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.btn-warning {
+  background-color: var(--kuning) !important;
+  color: var(--putih) !important;
+}
+
+a.instagram-btn,
+a.linkedin-btn,
+a.github-btn {
+  text-decoration: none;
+  color: var(--abu);
+  font-size: 1.5em;
+}
+
+.instagram-btn:hover {
+  color: #c32aa3 !important;
+}
+
+.linkedin-btn:hover {
+  color: #0e76a8 !important;
+}
+
+.github-btn:hover {
+  color: #6e5494 !important;
+}
